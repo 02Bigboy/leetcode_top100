@@ -18,8 +18,8 @@ class Solution(object):
 def twosum(nums, target):
     cach = {}
     for index, num in enumerate(nums):
-        if num in cach:
-            return [cach[num], index]
+        if target - num in cach:
+            return [cach[target - num], index]
         else:
             cach[num] = index
 

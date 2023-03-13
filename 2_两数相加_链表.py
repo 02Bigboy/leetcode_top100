@@ -67,6 +67,7 @@ class Solution:
         head = tree = ListNode()  # 其实就是定义一个单链表，然后后面的链表都接在后面
         val = tem = 0   # val存储每一位相加后的值，tem存储进位那些
         while tem or l1 or l2:
+            val = tem
             if l1:
                 val += l1.val
             if l2:
