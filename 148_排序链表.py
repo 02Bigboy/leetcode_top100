@@ -76,7 +76,7 @@ class Solution:
     def merge(self, m1, m2):
         if not m1:
             return m2
-        if not m1:
+        if not m2:
             return m1
         if m1.val <= m2.val:
             m1.next = self.merge(m1.next, m2)

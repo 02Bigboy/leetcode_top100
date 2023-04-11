@@ -12,6 +12,6 @@ class Solution:
 		mid_idx = inorder.index(preorder[0])
 		# 递归的处理前序数组的左边部分和中序数组的左边部分
 		# 递归处理前序数组右边部分和中序数组右边部分
-		root.left = self.buildTree(preorder[1:mid_idx+1],inorder[:mid_idx])
+		root.left = self.buildTree(preorder[1:mid_idx+1],inorder[:mid_idx])       # 什么时候要用self?
 		root.right = self.buildTree(preorder[mid_idx+1:],inorder[mid_idx+1:])
 		return root

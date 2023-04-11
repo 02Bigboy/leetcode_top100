@@ -40,7 +40,7 @@ class Solve_:
             j = len(s)
             if len(s) - i <= len_tem:  # 如果剩下的字符串都没有已经找到的长了，就不需要找了
                 break
-            while j > i:
+            while j > i:              # 学到了用while替换for
                 if j - i <= len_tem:  # 如果当前字符能查找的长度小于已经找到的最长的，就不需要找了
                     break
                 if s[i:j] == s[i:j][::-1]:
